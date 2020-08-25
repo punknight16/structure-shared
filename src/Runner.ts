@@ -1,4 +1,3 @@
-import * as Utils from './Utils.js'
 import * as esprima from 'esprima'
 import * as Cookie from 'tough-cookie'
 import * as Steps from './Steps'

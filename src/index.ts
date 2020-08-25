@@ -1,5 +1,4 @@
 import * as Runner from './Runner'
-import * as Utils from './Utils'
 import * as RunState from './RunState'
 import * as TreeData from './TreeData'
 import * as Common from './Common'
@@ -14,5 +13,5 @@ import * as SqlTabActions from './SqlTabActions'
 import * as GitHub from './GitHub'
 
 export {
-   Dynamo, Runner, Utils,  RunState, TreeData, Common, State, RequestTree, Data, Steps, Snowflake, VersionControlActions, SqlTabActions, GitHub
+   Dynamo, Runner,  RunState, TreeData, Common, State, RequestTree, Data, Steps, Snowflake, VersionControlActions, SqlTabActions, GitHub
 }

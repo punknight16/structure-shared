@@ -132,7 +132,8 @@ export const versionControlReducer = (state={
         case VersionControlAction.CLEAR_VERSION_CONTROL_MESSAGE:
             const s =  {...state}
             if(s.hasOwnProperty('responseMessage')){
-                delete s.responseMessage
+                s.responseMessage.type = null;
+                s.responseMessage.text = null;
             }
             return s;
             break;
