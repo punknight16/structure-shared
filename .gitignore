@@ -8,7 +8,7 @@ src/*.js.map
 src/*.js
 src/*.d.ts
 !src/index.js
-
+!src/Utils.js
 
 # misc
 .DS_Store

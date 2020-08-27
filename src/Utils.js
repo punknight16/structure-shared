@@ -1,4 +1,4 @@
-import axios from 'axios'
+/*import axios from 'axios'
 import * as Cookie from 'tough-cookie'
 export {Cookie}
 axios.defaults.withCredentials = true
@@ -267,4 +267,4 @@ export class CookieState {
 		this.clone = this.clone.bind(this)
 		this.state = new Cookie.CookieJar()
 	}
-} 
+}*/
