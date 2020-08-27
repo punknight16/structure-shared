@@ -1,11 +1,16 @@
 import * as _ from 'lodash'
 import * as Dynamo from './Dynamo';
 import * as AWSSdk from 'aws-sdk';
-/*
+
 export function IsElectron() {
-	var userAgent = navigator.userAgent.toLowerCase();
-	return (userAgent.indexOf(' electron/') > -1)
-}*/
+	if(navigator){
+
+		var userAgent = navigator.userAgent.toLowerCase();
+		return (userAgent.indexOf(' electron/') > -1)
+	} else {
+		return false
+	}
+}
 
 export const max= (a, initialValue)=> {
 	return a.reduce((m,x)=> parseInt(m)>parseInt(x) ? parseInt(m):parseInt(x), initialValue);
