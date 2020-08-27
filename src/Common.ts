@@ -2,9 +2,10 @@ import * as _ from 'lodash'
 import * as Dynamo from './Dynamo';
 import * as AWSSdk from 'aws-sdk';
 
-export function IsElectron() {
-	if(navigator){
+let navigator;
 
+export function IsElectron() {	
+	if(navigator){
 		var userAgent = navigator.userAgent.toLowerCase();
 		return (userAgent.indexOf(' electron/') > -1)
 	} else {
