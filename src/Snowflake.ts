@@ -82,7 +82,7 @@ export const runSnowflakeQuery = (userConfig: State.IUserConfig, query: string):
 			axios.defaults.baseURL = protocol + "//" + hostname //+ ":8080";
 		}
 		let path = '/api/snowflake/query'
-		if (Common.IsElectron()){
+		if (Common.IsElectron() || process.env.NODE_ENV == 'cli'){
 			axios.defaults.baseURL = "http://localhost:3001/"
 			path = '/snowflake/query'
 		}
